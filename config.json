@@ -1,0 +1,12 @@
+{
+    "token": "",
+    "Activites": {
+        "text": "Mon activitée",
+        "_type list": "PLAYING | STREAMING | LISTENING | WATCHING",
+        "type": "WATCHING",
+        "_status list": "online | idle | invisible | dnd (do not disturb)",
+        "status": "idle"
+    },
+    "prefix": "!",
+    "bot_owner": "123456789"
+}

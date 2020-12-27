@@ -1,0 +1,31 @@
+{
+  "name": "djs-boilerplate",
+  "version": "1.0.0",
+  "description": "another boiler plate for discord.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js --ignore db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shizey/djs-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "djs",
+    "discord.js",
+    "bot"
+  ],
+  "author": "Shizey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shizey/djs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Shizey/djs-boilerplate#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fancylog": "^4.0.5",
+    "lowdb": "^1.0.0"
+  }
+}
