@@ -21,6 +21,21 @@ const config = require('./config.json');
 client.config = config;
 client.commands = new Discord.Collection();
 client.commandList = {};
+client.cooldowns = new Discord.Collection();
+
+client.clean = async (client, text) => {
+    if (text && text.constructor.name == "Promise")
+        text = await text;
+    if (typeof text !== "string")
+        text = require("util").inspect(text, { depth: 1 });
+
+    text = text
+        .replace(/`/g, "`" + String.fromCharCode(8203))
+        .replace(/@/g, "@" + String.fromCharCode(8203))
+        .replace(client.token, "|TOKEN|");
+
+    return text;
+};
 
 
 fs.readdir(path.join(__dirname, 'events'), (err, files) => {
